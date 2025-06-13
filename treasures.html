@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Ethiopia's rich history, vibrant culture, and breathtaking landscapes">
+    <link rel="icon" href="/images/ethiopia.png" type="image/png">
+    <title>Timeless Ethiopia - Treasures</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="/css/treasures.css">
+</head>
+<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+<script>
+    Weglot.initialize({
+        api_key: 'wg_30a8191d02a91ca5dd6dc2e56bc64f342'
+    });
+</script>
+<body>
+    <nav class="nav" aria-label="Main navigation">
+        <div class="home">
+            <a href="index.html">
+                <img src="/images/ethiopia.png" alt="Ethiopia Logo" width="30" height="30">
+                <span>Timeless Ethiopia</span>
+            </a>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="traditions.html">Traditions</a></li>
+            <li><a href="religions.html">Religions</a></li>
+            <li><a href="treasures.html">Treasures</a></li>
+            <li><a href="events.html">Events</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+    <div class="hero-content">
+      <h1>Treasures of Ethiopia</h1>
+      <p>Explore the diverse treasures and UNECO sites that have shaped Ethiopia's historical legacy.</p>
+    </div>
+  </header> 
+
+<main>
+    <section class="treasure-section">
+        <div class="treasure-grid">
+
+          <div class="treasure-card">
+            <img src="/images/lalibela.jpg" alt="Lalibela Church">
+            <h2>Lalibela</h2>
+            <p>
+              Built in the 12th century by King Lalibela, these eleven monolithic rock-hewn churches were designed to be a “New Jerusalem.” Carved entirely from volcanic rock and still in use today, Lalibela is one of Ethiopia’s most sacred pilgrimage sites and a UNESCO World Heritage Site. The architecture and spiritual legacy make it a marvel of medieval engineering and devotion.
+            </p>
+          </div>
+
+          <div class="treasure-card">
+            <img src="/images/axum.jpg" alt="Axum Obelisk">
+            <h2>Axum Obelisks</h2>
+            <p>
+              The Axum Obelisks are towering granite stelae dating back to the 4th century, serving as grave markers for the ancient Aksumite nobility. The largest remaining obelisk stands over 24 meters tall and symbolizes the technological advancement and political power of the Axumite Kingdom — once one of the greatest civilizations of the ancient world.
+            </p>
+          </div>
+
+          <div class="treasure-card">
+            <img src="/images/fasil.jpeg" alt="Fasil Ghebbi">
+            <h2>Fasil Ghebbi</h2>
+            <p>
+              Located in Gondar, Fasil Ghebbi is a 17th-century royal enclosure surrounded by high stone walls, housing castles, churches, and palaces. It was the political center of the Ethiopian Empire for over two centuries. With a blend of Ethiopian, Portuguese, and Indian architecture, it reflects Ethiopia’s unique interaction with foreign influences while preserving its heritage.
+            </p>
+          </div>
+
+          <div class="treasure-card">
+            <img src="/images/harar.jpg" alt="Harar Jugol">
+            <h2>Harar Jugol</h2>
+            <p>
+              Often considered the fourth holiest city in Islam, Harar Jugol is a walled city with over 80 mosques, hundreds of shrines, and unique traditional houses. Its narrow alleyways are full of color, culture, and centuries-old stories. Declared a UNESCO World Heritage Site, Harar is also famous for its tradition of feeding wild hyenas, a nightly ritual blending folklore and trust.
+            </p>
+          </div>
+
+          <div class="treasure-card">
+            <img src="/images/semien.jpg" alt="Simien Mountains">
+            <h2>Simien Mountains</h2>
+            <p>
+              A dramatic landscape of jagged peaks, deep valleys, and sheer cliffs, the Simien Mountains are home to rare wildlife like the gelada monkey, Ethiopian wolf, and Walia ibex. With elevations exceeding 4,500 meters, this UNESCO World Heritage Site offers breathtaking views and challenging treks. It is one of Africa’s most majestic and biodiverse highlands.
+            </p>
+          </div>
+
+          <div class="treasure-card">
+            <img src="/images/danakil.jpeg" alt="Danakil Depression">
+            <h2>Danakil Depression</h2>
+            <p>
+              One of the hottest and most inhospitable places on Earth, the Danakil Depression lies at the junction of three tectonic plates. It features vibrant sulfur springs, acidic pools, lava lakes, and vast salt flats. Despite the extreme conditions, the Afar people have lived here for generations, extracting salt and embracing this alien-like terrain. The Danakil is a testament to Earth’s raw geological power and surreal beauty.
+            </p>
+          </div>
+
+
+        </div>
+    </section>
+
+    <section class="map-section">
+      <h2>Interactive Map</h2>
+          <div id="map" aria-label="Map of Ethiopia"></div>
+    </section>
+</main>
+
+   <footer class="footer">
+        <p>&copy; 2025 Timeless Ethiopia. All rights reserved. | Property of <span>Kaleb Tewodros</span></p>
+        <p><a href="aboutus.html" class="aboutus">About Us</a></p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/js/map.js"></script>
+
+</body>
+</html

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Ethiopia's rich history, vibrant culture, and breathtaking landscapes">
+    <link rel="icon" href="images/ethiopia.png" type="image/png">
+    <title>Timeless Ethiopia</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+<script>
+    Weglot.initialize({
+        api_key: 'wg_30a8191d02a91ca5dd6dc2e56bc64f342'
+    });
+</script>
+<body>
+    
+    <nav class="nav" aria-label="Main navigation">
+        <div class="home">
+            <a href="index.html">
+                <img src="/images/ethiopia.png" alt="Ethiopia Logo" width="30" height="30">
+                <span>Timeless Ethiopia</span>
+            </a>
+        </div>
+        
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="traditions.html">Traditions</a></li>
+            <li><a href="religions.html">Religions</a></li>
+            <li><a href="treasures.html">Treasures</a></li>
+            <li><a href="events.html">Events</a></li>
+        </ul>
+    </nav>
+    <main id="main-content" class="main">
+        <section class="hero">
+            <video src="videoplayback.mp4" autoplay muted loop playsinline aria-label="Ethiopian landscape video">
+            </video>
+            <section class="hero-content">
+                <h1>Welcome To Ethiopia</h1>
+                <p>Explore Ethiopia's rich history, vibrant culture, and breathtaking landscapes.</p>
+                <button class="learn-more">Learn More</button>
+            </section>
+        </section>
+        
+        <section class="discover-section">
+            <div class="discover">
+                <h1>Ethiopia <span class="pronunciation">noun /iːθiˈəʊpiə/</span></h1>
+                <p>Ethiopia is one of the oldest nations in the world, with a history that stretches back thousands of years. Often referred to as the birthplace of humanity, the country is home to some of the earliest human fossils ever discovered, including "Lucy," a 3.2-million-year-old hominid found in the Afar region. Ancient civilizations began to form in northern Ethiopia as early as the 10th century BCE, starting with the Kingdom of Dʿmt.</p>
+                <p>This early kingdom set the stage for the rise of the Kingdom of Aksum, which became one of the most powerful empires of the ancient world. Centered in what is now northern Ethiopia and Eritrea, Aksum was known for its architectural marvels such as towering obelisks, its own written script called Ge'ez, and its role as a major trading hub connecting Africa, the Middle East, and Asia.</p>
+                <p>Ethiopia is known for its strong cultural identity and long-standing sovereignty. It resisted colonization, most notably defeating Italian forces at the Battle of Adwa in 1896. The country is home to a rich cultural heritage, ancient architecture, and archaeological sites. In recent years, Ethiopia has been undergoing rapid modernization, with major infrastructure projects, urban development, and growing global influence.</p>
+            </div>
+            <a href="treasures.html" class="callout see-all-places">See All Places &gt;</a>
+            <div id="map" aria-label="Map of Ethiopia"></div>
+        </section>
+        
+        <section class="events-section" id="events">
+            <div class="events">
+                <h1>Events</h1>
+                <div class="event-cards">
+                    <article class="card adwa">
+                        <div class="card-img">
+                            <img src="/images/adwa.jpg" alt="Depiction of the Battle of Adwa" width="400" height="300">
+                        </div>
+                        <div class="card-content">
+                            <h2>Battle of Adwa</h2>
+                            <p>The Battle of Adwa (Amharic: የዐድዋ ጦርነት; Tigrinya: ውግእ ዓድዋ; Italian: battaglia di Adua, also spelled Adowa) was the climactic battle of the First Italo-Ethiopian War. The Ethiopian army defeated an invading Italian and Eritrean force led by Oreste Baratieri on March 1, 1896, near the town of Adwa.</p>
+                            <a href="events.html" class="view-event">View Event &gt;</a>
+                        </div>
+                    </article>
+                    <article class="card dogali">
+                        <div class="card-img">
+                            <img src="/images/dogali.jpg" alt="Depiction of the Battle of Dogali" width="400" height="300">
+                        </div>
+                        <div class="card-content">
+                            <h2>Battle of Dogali</h2>
+                            <p>Italy sought to establish a colonial empire after unification in 1861, which led to conflict with Ethiopia over Eritrea. The 1894 Treaty of Wuchale, which Italy claimed granted them a protectorate over Ethiopia, was disputed by King Menelik II. This led to the First Italo-Ethiopian War in 1895.</p>
+                            <a href="events.html" class="view-event">View Event &gt;</a>
+                        </div>
+                    </article>
+                </div>
+                <a href="events.html" class="callout see-all-events">See All Events &gt;</a>
+            </div>
+        </section>
+        
+        <section class="treasures-section" id="treasures">
+            <div class="treasures">
+                <section class="visit-section">
+                    <div class="visit-content">
+                        <h3 class="visit-title">Visit Ethiopia</h3>
+                        <p class="visit-desc">Explore Ethiopia's diverse landscapes, ancient ruins, and vibrant culture. Whether you're a history buff, a nature lover, or a cultural enthusiast, Ethiopia has something to offer for everyone.</p>
+                        <button class="visit-btn"><a href="visit.html">Visit Ethiopia &gt;</a></button>
+                    </div>
+                </section>
+
+                <h1>Treasures</h1>
+                <div class="treasure-cards">
+                    <article class="treasure-card lalibela">
+                        <div class="treasure-img">
+                            <img src="/images/lalibela.jpg" alt="Rock-hewn churches of Lalibela" width="400" height="300">
+                        </div>
+                        <div class="treasure-content">
+                            <h2>Lalibela</h2>
+                            <p>Lalibela is a town in the Amhara region of Ethiopia, famous for its rock-hewn churches, which are a UNESCO World Heritage Site. These 11 medieval monolithic churches were carved out of rock in the 12th century and are considered one of Ethiopia's greatest architectural achievements.</p>
+                            <a href="treasures.html" class="view-treasure">View Treasure &gt;</a>
+                        </div>
+                    </article>
+                    <article class="treasure-card axum">
+                        <div class="treasure-img">
+                            <img src="/images/axum.jpg" alt="Ancient obelisks of Axum" width="400" height="300">
+                        </div>
+                        <div class="treasure-content">
+                            <h2>Axum Obelisks</h2>
+                            <p>The Axum Obelisks are ancient monolithic structures located in the city of Axum, Ethiopia. They are among the most significant archaeological sites in Ethiopia and are believed to date back to the 4th century AD, serving as markers for royal graves.</p>
+                            <a href="treasures.html" class="view-treasure">View Treasure &gt;</a>
+                        </div>
+                    </article>
+                </div>
+                <a href="treasures.html" class="callout view-all-treasure">View All Treasures &gt;</a>
+                
+                
+            </div>
+        </section>
+
+        <section class="contactus-section">
+            <div class="contactus-content">
+                <div class="contacts">
+                <h1>
+                    <a href="contact.html">Contact Us</a>
+                </h1>
+                    <p>Email us at: <a href="mailto:contact@timelessethiopia.com">contact@timelessethiopia.com</a></p>
+                    <p>Phone: <a href="tel:+251911000000">+251 911 000 000</a></p>
+                    <p>Address: Addis Ababa, Ethiopia</p>
+                    
+                    <div class="socials">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
+                            <g fill="#a47764" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M15,3c-6.627,0 -12,5.373 -12,12c0,6.016 4.432,10.984 10.206,11.852v-8.672h-2.969v-3.154h2.969v-2.099c0,-3.475 1.693,-5 4.581,-5c1.383,0 2.115,0.103 2.461,0.149v2.753h-1.97c-1.226,0 -1.654,1.163 -1.654,2.473v1.724h3.593l-0.487,3.154h-3.106v8.697c5.857,-0.794 10.376,-5.802 10.376,-11.877c0,-6.627 -5.373,-12 -12,-12z"></path></g></g>
+                            </svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
+                        <g fill="#a47764" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.17,0 -13,5.83 -13,13v18c0,7.17 5.83,13 13,13h18c7.17,0 13,-5.83 13,-13v-18c0,-7.17 -5.83,-13 -13,-13zM37,11c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zM25,14c6.07,0 11,4.93 11,11c0,6.07 -4.93,11 -11,11c-6.07,0 -11,-4.93 -11,-11c0,-6.07 4.93,-11 11,-11zM25,16c-4.96,0 -9,4.04 -9,9c0,4.96 4.04,9 9,9c4.96,0 9,-4.04 9,-9c0,-4.96 -4.04,-9 -9,-9z"></path></g></g>
+                        </svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
+                        <g fill="#a47764" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c12.703,0 23,10.297 23,23c0,12.703 -10.297,23 -23,23c-12.703,0 -23,-10.297 -23,-23c0,-12.703 10.297,-23 23,-23zM32.934,34.375c0.423,-1.298 2.405,-14.234 2.65,-16.783c0.074,-0.772 -0.17,-1.285 -0.648,-1.514c-0.578,-0.278 -1.434,-0.139 -2.427,0.219c-1.362,0.491 -18.774,7.884 -19.78,8.312c-0.954,0.405 -1.856,0.847 -1.856,1.487c0,0.45 0.267,0.703 1.003,0.966c0.766,0.273 2.695,0.858 3.834,1.172c1.097,0.303 2.346,0.04 3.046,-0.395c0.742,-0.461 9.305,-6.191 9.92,-6.693c0.614,-0.502 1.104,0.141 0.602,0.644c-0.502,0.502 -6.38,6.207 -7.155,6.997c-0.941,0.959 -0.273,1.953 0.358,2.351c0.721,0.454 5.906,3.932 6.687,4.49c0.781,0.558 1.573,0.811 2.298,0.811c0.725,0 1.107,-0.955 1.468,-2.064z"></path></g></g>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <h1>Feedback</h1>
+                    <p>For inquiries, feedback, or support, please reach out to us through the contact form below. We value your input and are here to assist you.</p>
+                    <form action="#" method="post" class="contact-form">
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>        
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Timeless Ethiopia. All rights reserved. | Property of <span>Kaleb Tewodros</span></p>
+        <p><a href="aboutus.html" class="aboutus">About Us</a></p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/js/map.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
+
